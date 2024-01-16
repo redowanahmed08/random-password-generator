@@ -1,0 +1,158 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #2A3543;
+}
+.container{
+  width: 450px;
+  height: 570px;
+  background: #333E4D;
+  border-radius: 10px;
+  box-shadow: 0px 6px 30px 2px rgba(0, 0, 0, 0.1);
+}
+.container h2{
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 2px solid white;
+}
+.wrapper{
+  margin: 1.25rem 1.75rem;
+}
+.wrapper .input-box{
+  position: relative;
+}
+h2 {
+  color: white;
+  text-align: center;
+
+}
+.input-box input{
+  width: 100%;
+  height: 53px;
+  color: white;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid white;
+  padding: 0 2.85rem 0 1rem;
+}
+.input-box span{
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: white;
+}
+.input-box span:hover{
+  color: #076CFC !important;
+}
+.wrapper .pass-indicator{
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: white;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+}
+.pass-indicator::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+.pass-indicator#weak::before{
+  width: 20%;
+  background: #ff0000;
+}
+.pass-indicator#medium::before{
+  width: 50%;
+  background: rgb(255, 158, 1);
+}
+.pass-indicator#strong::before{
+  width: 100%;
+  background: #36e002;
+}
+.wrapper .pass-length{
+  margin: 1.56rem 0 1.25rem;
+}
+.pass-length .details{
+  display: flex;
+  justify-content: space-between;
+}
+.pass-length input{
+  width: 100%;
+  height: 5px;
+}
+.pass-settings .options{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.pass-settings .options .option{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+.options .option:first-child{
+  pointer-events: none;
+}
+.options .option:first-child input{
+  opacity: 0.7;
+}
+.options .option input{
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+.options .option label{
+  cursor: pointer;
+  color: white;
+  padding-left: 0.63rem;
+}
+.wrapper .generate-btn{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #076CFC;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+}
+
+::-webkit-scrollbar {
+  width: 9px; 
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #076CFC;
+}
+::-webkit-scrollbar-track {
+  background-color: #2A3543;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #494A54;
+  border-radius: 5px;
+}
